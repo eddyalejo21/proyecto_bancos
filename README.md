@@ -1,5 +1,13 @@
 # Sistema de Inteligencia Financiera para el Análisis del Sector Bancario Ecuatoriano
 
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-ff4b4b)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-orange)
+![Status](https://img.shields.io/badge/Status-En%20desarrollo-yellow)
+![License](https://img.shields.io/badge/License-Uso%20académico-lightgrey)
+
 Proyecto de tesis orientado a transformar los boletines estadísticos oficiales de la Superintendencia de Bancos del Ecuador en un sistema analítico que permita comparar, rankear y evaluar el desempeño financiero de las instituciones bancarias privadas del país.
 
 ---
@@ -15,6 +23,31 @@ Este proyecto busca convertir dichos archivos en un dataset analítico consolida
 ## Objetivo general
 
 Transformar el boletín estadístico oficial de la Superintendencia de Bancos en un sistema de inteligencia financiera que permita comparar, rankear y analizar el desempeño de las instituciones bancarias privadas del Ecuador mediante indicadores financieros clave.
+
+---
+## Resumen rápido de la solución
+
+Este proyecto convierte archivos Excel oficiales del sistema bancario ecuatoriano en un dataset limpio que permite:
+
+- Procesar boletines estadísticos en formato `.xls`, `.xlsx` y `.xlsm`.
+- Extraer automáticamente el período desde la cabecera del archivo.
+- Limpiar encabezados, celdas fusionadas y filas no analíticas.
+- Estandarizar nombres de bancos.
+- Transformar bancos de columnas a filas.
+- Consolidar indicadores financieros en formato analítico.
+- Generar rankings por banco, período e indicador.
+- Preparar datos para un dashboard en Streamlit.
+- Exponer información mediante una API local con FastAPI.
+
+---
+## Anáñisis de la estrucutra de los archivos
+
+- Encabezados multinivel.
+- Celdas fusionadas.
+- Bancos ubicados como columnas.
+- Variaciones en los nombres de las instituciones.
+- Cambios en la presencia de bancos a lo largo del tiempo.
+- Filas de categorías mezcladas con datos reales.
 
 ---
 
